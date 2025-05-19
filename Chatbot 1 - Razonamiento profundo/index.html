@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">  <!-- Definir idioma principal en español-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photon.AI✨</title>
+    <!-- Enlazando con GOOGLE FONTS para los iconos-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@32,400,0,0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body> 
+    <div class="contenedor">  
+      <!-- Encabezado (para interaccion inicial predefinida) -->
+      <header class="encabezado">
+        <h1 class="titulo-principal">Bienvenido Chatbot 1: Aprendizaje activo y razonado</h1>
+        <h4 class="titulo-secundario">👋¡Hola! Soy Photon, Estoy diseñado para ayudarte a aprender y entender pensando activamente. No te daré respuestas directas sin que antes intentes resolver por ti mismo. Mi función es guiarte con preguntas que estimulen tu razonamiento y adaptar mis explicaciones según tu progreso. Estoy aquí para acompañarte en tu esfuerzo por comprender, no para reemplazarlo.
+          <br>
+          <br>Aquí tienes algunas recomendaciones de uso: 🔍
+        </h4>
+      </header>
+
+      <!-- Cuadros de recomendaciones -->
+      <ul class="recomendaciones">
+        <li class="caja-recomendaciones">
+          <p class="text">¿Quisiera saber por qué razón la tabla periódica esta así distribuida, afecta en algo que sea así o solo fue para un diseño bonito?
+</p>
+          <span class="icon material-symbols-rounded">draw</span>
+        </li>
+        <li class="caja-recomendaciones">
+          <p class="text">¿Quiero que me ayudes a entender la teoría cuántica? ¿Qué propone? ¿Qué importancia tiene?
+</p>
+          <span class="icon material-symbols-rounded">lightbulb</span>
+        </li> 
+        <li class="caja-recomendaciones">
+          <p class="text">Quiero que me resuelvas una duda ¿De que manera se puede comportar la materia?
+</p>
+          <span class="icon material-symbols-rounded">explore</span>
+        </li>
+        <li class="caja-recomendaciones">
+          <p class="text">¿Cuál es la importancia que tiene la teoría atómica de Bohr?
+</p>
+          <span class="icon material-symbols-rounded">code_blocks</span>
+        </li>
+      </ul>
+
+      <!-- Seccion contenedora del historial de chats -->
+      <div class="contenedor-chat"></div>
+
+      <!-- Seccion inferior -->
+        <!-- Entrada del texto -->
+      <div class="seccion-inferior">
+        <div class="seccion-interactiva">
+          <form action="#" class="caja-texto">
+            <input type="text" placeholder="Escribe tu pregunta aquí... ✍️" class="entrada-texto" required />
+            <div class="acciones-caja-texto">
+              <!-- Seccion de la carga de archivos -->
+              <div class="carga-archivos">
+                <img src="#" class="vista-previa-archivo" />
+                <input id="tipo-archivo-carga" type="file" accept="image/*, .pdf, .txt, .csv" hidden />
+                <button type="button" class="file-icon material-symbols-rounded">description</button>
+                <button id="boton-cancelar-carga-archivo" type="button" class="material-symbols-rounded">close</button>
+                <button id="boton-anexar-archivo" type="button" class="material-symbols-rounded">attach_file</button>
+              </div>
+
+              <!-- Botones para enviar pregunta y detener generacion de respuesta del bot -->
+              <button id="boton-detener-respuesta" type="button" class="material-symbols-rounded">stop_circle</button>
+              <button id="boton-enviar-respuesta" class="material-symbols-rounded">arrow_upward</button>
+            </div>
+          </form>
+
+          <!-- Botones para cambiar tema y borrar el chat -->
+          <button id="boton-alternar-tema-fondo" class="material-symbols-rounded">light_mode</button>
+          <button id="boton-borrar-chat" class="material-symbols-rounded">delete</button>
+        </div>
+
+        <p class="texto-disclaimer">El contenido generado por IA puede no ser preciso. Se recomienda verificar la informacion.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>  <!-- Vincular el archivo Javascript con el HTML -->
+  </body>
+</html>
